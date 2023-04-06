@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --cor-primaria: #6B728E;
+    --cor-secundaria: #474E68;
+    --cor-botao: #404258;
+    --cor-branca: #fff;
+    --cor-linha-transparente: rgba( 0, 0, 0, 0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding-top: 100px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input{
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    margin: 3px solid var(--cor-botao);
+}
+
+form button{
+    background-color: var(--cor-botao);
+    border-radius: 8px;
+    color: var(--cor-branca);
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid var(--cor-botao);
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td{
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid var(--cor-linha-transparente);
+}
+
+tfoot td{
+    font-weight: bold;
+    border-bottom: none;
+}
